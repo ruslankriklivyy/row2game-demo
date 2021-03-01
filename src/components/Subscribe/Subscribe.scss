@@ -1,0 +1,128 @@
+.subscribe {
+  margin-top: 65px;
+
+  &__title {
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .form {
+    margin: 0 auto;
+    width: 50%;
+
+    &-error {
+      display: block;
+      color: #e02525;
+      padding-top: 5px;
+    }
+
+    &-agree {
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-size: 16px;
+      color: #585555;
+      text-transform: uppercase;
+    }
+
+    &-checkbox {
+      margin-right: 10px;
+    }
+
+    &-block {
+      display: flex;
+      align-items: center;
+
+      &-check {
+        margin-top: 20px;
+      }
+
+      &-input {
+        width: 55%;
+        height: 55px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 0 15px;
+        border-right: none;
+        border-left: 1px solid #fff;
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        background: transparent;
+        color: #dfdbdb;
+        outline: none;
+
+        &::placeholder {
+          font-family: 'Rubik', sans-serif;
+        }
+      }
+    }
+
+    button {
+      width: 40%;
+      height: 55px;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 1px;
+      font-weight: 500;
+      font-size: 20px;
+      border: 1px solid #fff;
+      outline: none;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      background: #fff;
+      &:hover {
+        background-color: transparent;
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .subscribe {
+    &__title {
+      font-size: 23px;
+    }
+    .form {
+      width: 60%;
+    }
+    .form-block {
+      flex-direction: column;
+      &-input {
+        width: 100%;
+        border-right: 1px solid #fff;
+        margin-bottom: 15px;
+      }
+      button {
+        height: 40px;
+        width: 180px;
+      }
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .subscribe {
+    .form {
+      width: 80%;
+    }
+    .form-agree {
+      font-size: 10px;
+    }
+    .form-checkbox {
+      margin-right: 5px;
+    }
+    .form-block {
+      button {
+        height: 40px;
+        width: 160px;
+        font-size: 16px;
+      }
+    }
+  }
+}

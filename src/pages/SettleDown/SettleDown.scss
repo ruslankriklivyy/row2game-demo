@@ -1,0 +1,42 @@
+.settle-down {
+  &-screen {
+    width: 100%;
+    height: 550px;
+    margin-bottom: 40px;
+  }
+  &-info {
+    width: 80%;
+    margin: 0 auto;
+    p {
+      font-weight: 400;
+      font-size: 20px;
+      color: #fff;
+      text-align: center;
+      letter-spacing: 1px;
+      line-height: 35px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .settle-down {
+    &-info {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .settle-down {
+    &-screen {
+      height: 300px;
+    }
+    &-info {
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,203 @@
+.header {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 85px;
+  z-index: 400;
+  background-color: #0e0e0e;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    .header__inner {
+      height: 60px;
+    }
+  }
+
+  .logo {
+    img {
+      display: block;
+      width: 55px;
+      height: 55px;
+    }
+    svg {
+      path {
+        fill: #fff;
+        stroke: #202020;
+      }
+    }
+  }
+  &__inner {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__links {
+    overflow: hidden;
+    margin-left: auto;
+    height: 35px;
+  }
+  .nav {
+    margin-right: auto;
+    ul {
+      padding: 0;
+      list-style: none;
+      display: table;
+      text-align: center;
+    }
+    li {
+      display: table-cell;
+      position: relative;
+      padding: 15px 15px;
+    }
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-size: 16px;
+      display: inline-block;
+      padding: 15px 5px;
+      position: relative;
+      transition: all 0.2s ease;
+
+      &.active {
+        color: #d11f1f;
+      }
+
+      &:hover {
+        color: #d11f1f;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.sidebar {
+      .social__item-link {
+        &:hover {
+          margin-bottom: 0;
+        }
+        svg {
+          fill: #fff;
+          opacity: 0.8;
+          transition: opacity 0.2s ease;
+          &:hover {
+            opacity: 1;
+            fill: #fff;
+          }
+        }
+      }
+    }
+
+    &__item {
+      &:nth-child(1) .social__item-link::before {
+        background-image: url(../../assets/images/instagram.svg);
+      }
+      &:nth-child(2) .social__item-link::before {
+        background-image: url(../../assets/images/twitter.svg);
+      }
+      &:nth-child(3) .social__item-link::before {
+        background-image: url(../../assets/images/youtube.svg);
+      }
+      &:nth-child(4) .social__item-link::before {
+        background-image: url(../../assets/images/vk.svg);
+      }
+      &:nth-child(5) .social__item-link::before {
+        background-image: url(../../assets/images/facebook.svg);
+      }
+
+      &:nth-child(1) .social__item-link::after {
+        background-image: url(../../assets/images/instagram-red.svg);
+      }
+      &:nth-child(2) .social__item-link::after {
+        background-image: url(../../assets/images/twitter-red.svg);
+      }
+      &:nth-child(3) .social__item-link::after {
+        background-image: url(../../assets/images/youtube-red.svg);
+      }
+      &:nth-child(4) .social__item-link::after {
+        background-image: url(../../assets/images/vk-red.svg);
+      }
+      &:nth-child(5) .social__item-link::after {
+        background-image: url(../../assets/images/facebook-red.svg);
+      }
+      &-link {
+        position: relative;
+        display: block;
+        width: 35px;
+        height: 30px;
+        background: transparent;
+        overflow: hidden;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 40px;
+          left: 2px;
+          margin: 0 auto;
+          z-index: 5;
+          width: 16px;
+          height: 16px;
+          transition: all 0.35s ease;
+          background-color: transparent;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 0;
+          margin: 0 auto;
+          z-index: 5;
+          width: 16px;
+          transition: all 0.35s ease;
+          height: 16px;
+          background-color: transparent;
+        }
+
+        &:hover.social__item-link::after {
+          top: 5px;
+        }
+        &:hover.social__item-link::before {
+          top: -60px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    &__inner {
+      justify-content: space-between;
+    }
+    &__logo {
+      margin-right: auto;
+    }
+    &__links {
+      display: none;
+    }
+    .nav {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .header {
+    height: 65px;
+    &__inner {
+      height: 65px;
+    }
+  }
+}

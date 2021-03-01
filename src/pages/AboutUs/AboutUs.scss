@@ -1,0 +1,40 @@
+.about-us {
+  &-image {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 70px;
+  }
+  &__info {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    p {
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-size: 20px;
+      color: #fff;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us__info {
+    width: 100%;
+  }
+}
+
+@media (max-width: 578px) {
+  // About
+  .about-us {
+    &-image {
+      height: 300px;
+    }
+    &__info {
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}

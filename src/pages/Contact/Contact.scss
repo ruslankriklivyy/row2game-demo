@@ -1,0 +1,154 @@
+.contact {
+  padding-bottom: 70px;
+  background-color: #202020;
+  &-inner {
+    margin-bottom: 70px;
+    img {
+      width: 100%;
+      height: 75vh;
+    }
+  }
+  &-text {
+    width: 50%;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin: 0 auto 40px;
+  }
+  &__box {
+    form {
+      width: 500px;
+      margin: 0 auto;
+      color: #fff;
+      button {
+        display: block;
+        margin: 30px auto 0 auto;
+      }
+    }
+    .form-error {
+      display: block;
+      padding-top: 5px;
+      color: #e02525;
+      font-size: 16px;
+    }
+
+    .form {
+      width: 500px;
+      position: relative;
+      margin: 0 auto 0 auto;
+      overflow: hidden;
+
+      input,
+      textarea {
+        background-color: transparent;
+        width: 100%;
+        height: 50px;
+        padding-top: 10px;
+        border: none;
+        letter-spacing: 1px;
+        font-family: 'Rubik', sans-serif;
+        color: #fff;
+        font-weight: 400;
+        font-size: 16px;
+        outline: none;
+        resize: none;
+      }
+
+      textarea {
+        padding-top: 20px;
+      }
+      input:focus + .label-name .content-name,
+      input:valid + .label-name .content-name {
+        transform: translateY(-150%);
+        font-size: 14px;
+        color: #e02525;
+      }
+      textarea:focus + .label-name .content-name,
+      textarea:valid + .label-name .content-name {
+        transform: translateY(-150%);
+        font-size: 14px;
+        color: #e02525;
+      }
+      input:focus + .label-name::after,
+      input:valid + .label-name::after {
+        transform: translateX(0%);
+      }
+      textarea:focus + .label-name::after,
+      textarea:valid + .label-name::after {
+        transform: translateX(0%);
+      }
+      label {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        text-transform: uppercase;
+        border-bottom: 1px solid #fff;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -1px;
+          height: 100%;
+          width: 100%;
+          border-bottom: 3px solid #e02525;
+          transform: translateX(-100%);
+          transition: transform 0.3s ease;
+        }
+      }
+      .content-name {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        transition: all 0.3s ease;
+      }
+    }
+    .form-item {
+      margin-top: 5px;
+      .label-name.true {
+        .content-name {
+          color: #4c9aff !important;
+        }
+        &::after {
+          border-bottom: 3px solid #4c9aff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .contact {
+    &-text {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .contact {
+    width: 100%;
+    &-inner {
+      img {
+        height: 300px;
+      }
+    }
+    &-text {
+      width: 100%;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__box {
+      form {
+        width: 90%;
+      }
+      .form {
+        width: 90%;
+      }
+    }
+  }
+}

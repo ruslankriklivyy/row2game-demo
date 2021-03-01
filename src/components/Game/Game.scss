@@ -1,0 +1,125 @@
+.game {
+  position: relative;
+  padding-top: 85px;
+  background-image: url(../../assets//images/game-screen-2.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+
+  a {
+    width: 160px;
+  }
+
+  &-btn {
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: inline-block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 230px;
+    height: 45px;
+    text-align: center;
+    padding: 10px 15px;
+    background: #d11f1f;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background: #b11a1a;
+    }
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 85%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 80px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+
+  &__info {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .game {
+    &__title {
+      font-size: 65px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .game {
+    &__info {
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .game {
+    height: 550px;
+    &__block {
+      padding: 0;
+    }
+    &__info {
+      width: 100%;
+    }
+    &__title {
+      font-size: 40px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .game {
+    &__title {
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+    }
+    &-btn {
+      margin-bottom: 10px;
+    }
+  }
+}

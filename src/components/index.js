@@ -1,0 +1,10 @@
+export { default as Header } from './Header';
+export { default as Game } from './Game';
+export { default as Button } from './Button';
+export { default as Carousel } from './Carousel';
+export { default as Subscribe } from './Subscribe';
+export { default as Preloader } from './Preloader';
+export { default as ScrollToTop } from './ScrollToTop';
+export { default as Trailer } from './Trailer';
+export { default as SideBar } from './SideBar';
+export { default as Footer } from './Footer';
