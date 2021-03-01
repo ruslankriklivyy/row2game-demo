@@ -143,11 +143,14 @@
       line-height: 20px;
     }
     &__box {
+      .form-error {
+        font-size: 14px;
+      }
       form {
-        width: 90%;
+        width: 100%;
       }
       .form {
-        width: 90%;
+        width: 100%;
       }
     }
   }
