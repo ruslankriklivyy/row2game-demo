@@ -11,12 +11,12 @@
   .rec.rec-arrow {
     position: absolute;
     border-radius: 0;
-    background: rgba($color: #202020, $alpha: 0.6);
+    background: rgba($color: #202020, $alpha: 0.6) !important;
     z-index: 300;
   }
-  .lgksPe:hover:enabled,
-  .lgksPe:focus:enabled {
-    background: #e02525;
+  .jAmbxV:hover:enabled,
+  .jAmbxV:focus:enabled {
+    background: #e02525 !important;
   }
   .rec.rec-arrow-right {
     left: 0;
