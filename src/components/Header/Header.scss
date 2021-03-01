@@ -84,6 +84,7 @@
     align-items: center;
     &.sidebar {
       .social__item-link {
+        font-size: 0;
         &:hover {
           margin-bottom: 0;
         }
@@ -132,6 +133,7 @@
         background-image: url(../../assets/images/facebook-red.svg);
       }
       &-link {
+        font-size: 0;
         position: relative;
         display: block;
         width: 35px;

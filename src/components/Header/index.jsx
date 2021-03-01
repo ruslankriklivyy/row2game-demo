@@ -69,35 +69,35 @@ const Header = ({ items, onSelectLink, activeLink }) => {
                   <a
                     href="https://www.youtube.com/channel/UC0lFZSNtM9kgeN6MHGyWxNQ"
                     className="social__item-link">
-                    {/* <AiOutlineInstagram color="#fff" size="22px" /> */}
+                    empty
                   </a>
                 </li>
                 <li className="social__item">
                   <a
                     href="https://www.youtube.com/channel/UC0lFZSNtM9kgeN6MHGyWxNQ"
                     className="social__item-link">
-                    {/* <AiOutlineTwitter color="#fff" size="22px" /> */}
+                    empty
                   </a>
                 </li>
                 <li className="social__item">
                   <a
                     href="https://www.youtube.com/channel/UC0lFZSNtM9kgeN6MHGyWxNQ"
                     className="social__item-link">
-                    {/* <FaFacebookF color="#fff" size="18px" /> */}
+                    empty
                   </a>
                 </li>
                 <li className="social__item">
                   <a
                     href="https://www.youtube.com/channel/UC0lFZSNtM9kgeN6MHGyWxNQ"
                     className="social__item-link">
-                    {/* <AiOutlineYoutube color="#fff" size="22px" /> */}
+                    empty
                   </a>
                 </li>
                 <li className="social__item">
                   <a
                     href="https://www.youtube.com/channel/UC0lFZSNtM9kgeN6MHGyWxNQ"
                     className="social__item-link">
-                    {/* <FaVk color="#fff" size="22px" /> */}
+                    empty
                   </a>
                 </li>
               </ul>

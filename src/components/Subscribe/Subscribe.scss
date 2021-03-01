@@ -90,17 +90,24 @@
     }
     .form {
       width: 60%;
-    }
-    .form-block {
-      flex-direction: column;
-      &-input {
-        width: 100%;
-        border-right: 1px solid #fff;
-        margin-bottom: 15px;
+      position: relative;
+      &-error {
+        margin-top: 5px;
       }
-      button {
-        height: 40px;
-        width: 180px;
+      &-block {
+        flex-direction: column;
+        &-input {
+          width: 100%;
+          border-right: 1px solid #fff;
+          margin-bottom: 15px;
+        }
+        &-check {
+          margin-top: 10px;
+        }
+        button {
+          height: 45px;
+          width: 100%;
+        }
       }
     }
   }
@@ -120,8 +127,10 @@
     .form-block {
       button {
         height: 40px;
-        width: 160px;
         font-size: 16px;
+      }
+      &-input {
+        font-size: 14px;
       }
     }
   }
