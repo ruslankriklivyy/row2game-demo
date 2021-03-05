@@ -16,16 +16,17 @@ const SettleDown = () => {
           <h2 className="title">Settle Down</h2>
           <div className="settle-down-info">
             <p>
-              Settle Down перенесет вас в мир, разрушенный метеоритами, где единственным спасением и
-              источником существования выживших есть оливин – минерал, добываемый из метеоритов. Он
-              стал единственным источником энергии в суровых условиях нового мира. В игре есть три
-              основные фракции – ученые, правительство, шахтеры. Ученые занимаются разработкой новых
-              технологий на базе нового минерала. Занимаясь разработкой технологий на базе
-              оливина,ученые преследуют главную цель – автоматизировать и упростить жизнь
-              человечества.Settle Down перенесет вас в мир, разрушенный метеоритами, где
-              единственным спасением и источником существования выживших есть оливин – минерал,
-              добываемый из метеоритов. Он стал единственным источником энергии в суровых условиях
-              нового мира. В игре есть три основные фракции – ученые, правительство, шахтеры.
+              Hi, my name is "Name." Last night I met two guys who asked me to to write me a short
+              review of the game, and they shoved me an awful crumpled hundred dollar bill with
+              their number on it and shouted as they ran away that I could write anything anything.
+              I asked them over the phone what the game is, and all I got was, and I quote: "Kind of
+              like a first-person action, retrofuturistic, space, a fucking revolver, planet with
+              reptiloids, (indecipherable sounds) khulh, non-variability, intergalactic colonies,
+              sex, drugs and SLOOMOOO." I couldn't get this nonsense together in my head, so maybe
+              someone else can do it. I'm writing this, stupidly, because I'm kind of embarrassed
+              not to do something when I'm even if it's against my will. And since I can write
+              whatever I want. they'll probably cut out everything else. Jesus, what the fuck am I
+              doing with my life, tomorrow. I'm definitely going to look for a job tomorrow.
             </p>
           </div>
         </div>

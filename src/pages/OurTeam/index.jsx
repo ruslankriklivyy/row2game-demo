@@ -7,7 +7,7 @@ import { Subscribe } from '../../components';
 import gamePng from '../../assets/images/game-screen-2.png';
 import worker1 from '../../assets/images/worker-2.png';
 import worker2 from '../../assets/images/worker-3.png';
-import worker3 from '../../assets/images/worker-6.png';
+import worker3 from '../../assets/images/IGOR.png';
 import worker4 from '../../assets/images/worker-5.png';
 
 import './OurTeam.scss';
